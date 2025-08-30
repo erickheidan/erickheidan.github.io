@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erick Heidan — Currículo</title>
+  <meta name="description" content="Currículo minimalista de Erick Heidan. Experiência, habilidades, formação e contato.">
+  <meta property="og:title" content="Erick Heidan — Currículo">
+  <meta property="og:description" content="Currículo minimalista de Erick Heidan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seuusuario.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23111'/%3E%3Ctext x='50' y='60' font-size='60' text-anchor='middle' fill='white'%3Ecv%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #666666;
+      --border: #eaeaea;
+      --accent: #0ea5e9;
+      --card: #fafafa;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0c;
+        --text: #f2f2f2;
+        --muted: #a1a1aa;
+        --border: #222;
+        --accent: #38bdf8;
+        --card: #111214;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 20px 72px;
+    }
+    header {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .name { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
+    .role { color: var(--muted); font-weight: 600; }
+    nav {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;
+    }
+    nav a {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color .2s ease, transform .05s ease;
+    }
+    nav a:hover { border-color: var(--accent); }
+    nav a:active { transform: translateY(1px); }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 14px; border-radius: 10px;
+      text-decoration: none; font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+    }
+    .btn.primary { background: var(--accent); color: white; border-color: transparent; }
+    .btn:hover { filter: brightness(1.02); }
+    main section {
+      margin-top: 36px; padding-top: 6px;
+    }
+    h2 {
+      font-size: 18px; letter-spacing: 0.02em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 12px 0;
+    }
+    .lead {
+      font-size: 16px;
+      color: var(--text);
+      background: transparent;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: var(--card);
+    }
+    .experience {
+      display: grid; gap: 12px;
+      border-left: 2px solid var(--border);
+      padding-left: 16px;
+    }
+    .job { position: relative; padding-left: 0; }
+    .job::before {
+      content: ""; position: absolute; left: -19px; top: 6px;
+      width: 10px; height: 10px; border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+    }
+    .job h3 { margin: 0 0 4px; font-size: 16px; }
+    .job .meta { color: var(--muted); font-size: 14px; margin-bottom: 6px; }
+    ul, ol { padding-left: 18px; margin: 8px 0; }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill {
+      border: 1px solid var(--border);
+      border-radius: 999px; padding: 6px 10px; font-size: 14px;
+      background: transparent;
+    }
+    footer {
+      margin-top: 48px; font-size: 14px; color: var(--muted);
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      border-top: 1px dashed var(--border); padding-top: 16px;
+    }
+    /* Print-friendly */
+    @media print {
+      nav, .actions, footer { display: none !important; }
+      .wrap { padding: 0; }
+      body { background: white; color: black; }
+      .card { border-color: #ddd; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="name">Erick Heidan</div>
+      <div class="role">Data Analyst • São Paulo, Brasil</div>
+      <p class="lead">Bacharel em Ciências Sociais (FESPSP) com experiência em Análise de Dados/BI, construção de dashboards, automação de processos e monitoramento de KPIs. Atualmente Data Analyst na MATH Group.</p>
+
+      <nav aria-label="Navegação">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn primary" href="mailto:erickheidan@gmail.com" aria-label="Enviar email">✉️ Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/erickheidan" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">Baixar CV (PDF)</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre</h2>
+        <div class="card">
+          <p>Escreva um breve parágrafo sobre você: anos de experiência, áreas principais, tecnologias/ferramentas (se for de tech) ou competências (se for de negócios), idiomas e resultados notáveis.</p>
+        </div>
+      </section>
+
+      
+<section id="experiencia">
+  <h2>Experiência</h2>
+  <div class="experience">
+    <article class="job card">
+      <h3>Data Analytics Analyst Sr — MATH Group</h3>
+      <div class="meta">Nov 2024 — Atual • São Paulo, BR</div>
+      <ul>
+        <li>Análise de dados e monitoramento de KPIs.</li>
+        <li>Automatização e otimização de processos.</li>
+        <li>Criação de dashboards e relatórios para tomada de decisão.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Analista de Dados de CRM — Mosaic Brasil</h3>
+      <div class="meta">Dez 2022 — Nov 2024 • São Paulo, BR</div>
+      <ul>
+        <li>Modelagem e construção de bases de dados.</li>
+        <li>Dashboards e acompanhamento de KPIs.</li>
+        <li>Estudos e análises de dados.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Analista de Dados de CX — Petlove&Co</h3>
+      <div class="meta">Abr 2022 — Dez 2022 • São Paulo, BR</div>
+      <ul>
+        <li>Construção de painéis e análises de KPIs.</li>
+        <li>Estudos de dados focados em experiência do cliente.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Analista Pleno em Analytics — Dotz Inc.</h3>
+      <div class="meta">Jul 2021 — Mar 2022 • São Paulo, BR</div>
+      <ul>
+        <li>Criação de consultas e garantia de confiabilidade dos dados.</li>
+        <li>Desenvolvimento e monitoramento de KPIs.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Business Analyst Jr. — Revelo</h3>
+      <div class="meta">Out 2020 — Jun 2021 • São Paulo, BR</div>
+      <ul>
+        <li>Relatórios e dashboards de KPIs.</li>
+        <li>Automação de processos e bots internos.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Analista de CX — Revelo</h3>
+      <div class="meta">Ago 2019 — Out 2020 • São Paulo, BR</div>
+      <ul>
+        <li>Estudos e análises de dados de experiência do cliente.</li>
+      </ul>
+    </article>
+
+    <article class="job card">
+      <h3>Assistente Administrativo — Estúdio Papel</h3>
+      <div class="meta">Ago 2017 — Jul 2019 • São Paulo, BR</div>
+      <ul>
+        <li>Atividades administrativas e suporte operacional.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
+      
+<section id="habilidades">
+  <h2>Habilidades</h2>
+  <div class="card skills">
+    <span class="pill">Microsoft Power BI</span>
+    <span class="pill">SQL</span>
+    <span class="pill">ETL</span>
+    <span class="pill">Análise de Dados</span>
+    <span class="pill">Automação de Processos</span>
+    <span class="pill">Inglês Profissional</span>
+  </div>
+</section>
+
+
+      
+<section id="formacao">
+  <h2>Formação</h2>
+  <div class="card">
+    <p><strong>Especialização em Data Analytics</strong> — Preditiva Analytics (2021)</p>
+    <p><strong>Curso Livre Banco de Dados</strong> — Let's Code Academy (2020)</p>
+    <p><strong>Bacharelado em Ciências Sociais</strong> — FESPSP (2015–2018)</p>
+    <p><strong>Bacharelado em Administração</strong> — UNINOVE (2009–2012)</p>
+  </div>
+</section>
+
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <div class="card">
+          <p>Email: <a href="mailto:erickheidan@gmail.com">erickheidan@gmail.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/erickheidan" target="_blank" rel="noopener">linkedin.com/in/seu-usuario</a></p>
+          <p>GitHub: <a href="https://github.com/erickheidan" target="_blank" rel="noopener">github.com/seuusuario</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; 2025 • Erick Heidan</div>
+      <div>Feito com HTML + CSS minimalista • GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Erick Heidan",
+    "jobTitle": "Sua Profissão",
+    "url": "https://seuusuario.github.io",
+    "email": "mailto:erickheidan@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/erickheidan",
+      "https://github.com/erickheidan"
+    ]
+  }
+  </script>
+</body>
+</html>
