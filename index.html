@@ -1,324 +1,932 @@
+
 <!doctype html>
 <html lang="pt-br">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Erick Heidan — Currículo</title>
-  <meta name="description" content="Currículo minimalista de Erick Heidan. Experiência, habilidades, formação e contato.">
-  <meta property="og:title" content="Erick Heidan — Currículo">
-  <meta property="og:description" content="Currículo minimalista de Erick Heidan.">
+
+  <title>Erick Heidan — Data Analytics & Business Intelligence</title>
+
+  <meta name="description" content="Currículo profissional de Erick Heidan. Experiência em Data Analytics, Business Intelligence, SQL, Python, Power BI e automação de processos.">
+
+  <meta property="og:title" content="Erick Heidan — Data Analytics">
+  <meta property="og:description" content="Experiência profissional, formação acadêmica e competências em Data Analytics e Business Intelligence.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://seuusuario.github.io/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23111'/%3E%3Ctext x='50' y='60' font-size='60' text-anchor='middle' fill='white'%3Ecv%3C/text%3E%3C/svg%3E">
+  <meta property="og:url" content="https://erickheidan.github.io/">
+
+  <meta name="theme-color" content="#182334">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23182334'/%3E%3Ctext x='50' y='65' font-size='55' text-anchor='middle' fill='white'%3EEH%3C/text%3E%3C/svg%3E">
+
   <style>
+    /* =====================================
+       IDENTIDADE VISUAL
+    ===================================== */
+
     :root {
-      --bg: #ffffff;
-      --text: #111111;
-      --muted: #666666;
-      --border: #eaeaea;
-      --accent: #0ea5e9;
-      --card: #fafafa;
+      --bg: #f5f6f8;
+      --text: #202938;
+      --muted: #778191;
+      --border: #e2e6eb;
+      --accent: #397f91;
+      --card: #ffffff;
+      --pill-bg: #f1f5f7;
+      --pill-text: #405365;
+      --header-bg: #182334;
+      --header-text: #ffffff;
+      --header-muted: #d3dbe5;
     }
+
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #0b0b0c;
-        --text: #f2f2f2;
-        --muted: #a1a1aa;
-        --border: #222;
-        --accent: #38bdf8;
-        --card: #111214;
+        --bg: #111820;
+        --text: #e8edf3;
+        --muted: #9ba9b8;
+        --border: #303c49;
+        --accent: #79b7c5;
+        --card: #19232e;
+        --pill-bg: #253542;
+        --pill-text: #d0e0e7;
+        --header-bg: #101a28;
+        --header-text: #ffffff;
+        --header-muted: #c5d0dc;
       }
     }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      font-size: 15px;
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
+    a {
+      color: var(--accent);
+    }
+
     .wrap {
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
-      padding: 32px 20px 72px;
+      padding: 48px 28px 64px;
     }
+
+    /* =====================================
+       CABEÇALHO
+    ===================================== */
+
     header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 44px;
+      border-radius: 18px;
+      margin-bottom: 48px;
       display: grid;
-      gap: 12px;
-      margin-bottom: 24px;
+      gap: 16px;
     }
-    .name { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
-    .role { color: var(--muted); font-weight: 600; }
+
+    .eyebrow {
+      color: #b5c5d5;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+    }
+
+    .name {
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.045em;
+      line-height: 1.15;
+      margin-top: 8px;
+    }
+
+    .role {
+      color: #91bdca;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: .01em;
+    }
+
+    .lead {
+      color: var(--header-muted);
+      max-width: 680px;
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .location {
+      color: #b5c5d5;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* =====================================
+       NAVEGAÇÃO
+    ===================================== */
+
     nav {
-      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+      padding-top: 20px;
+      border-top: 1px solid #455365;
     }
+
     nav a {
-      padding: 8px 12px;
+      color: #e1e8ef;
+      border: 1px solid #455365;
+      border-radius: 999px;
+      padding: 7px 14px;
+      text-decoration: none;
+      font-size: 12px;
+      transition: all .2s ease;
+    }
+
+    nav a:hover {
+      background: #2b3b50;
+      border-color: #91bdca;
+    }
+
+    /* =====================================
+       BOTÕES
+    ===================================== */
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      border: 1px solid #455365;
+      background: transparent;
+      color: white;
+      transition: all .2s ease;
+    }
+
+    .btn.primary {
+      background: #397f91;
+      border-color: #397f91;
+      color: white;
+    }
+
+    .btn:hover {
+      filter: brightness(1.12);
+      transform: translateY(-1px);
+    }
+
+    /* =====================================
+       SEÇÕES
+    ===================================== */
+
+    main section {
+      margin-top: 48px;
+      scroll-margin-top: 24px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 12px;
+      letter-spacing: .14em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 22px;
+    }
+
+    /* =====================================
+       EXPERIÊNCIA PROFISSIONAL
+    ===================================== */
+
+    .experience {
+      display: grid;
+      gap: 18px;
+      border-left: 1px solid var(--border);
+      padding-left: 22px;
+    }
+
+    .job {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      background: var(--card);
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+    }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      left: -29px;
+      top: 27px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--bg);
+    }
+
+    .job:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(20,35,55,.07);
+    }
+
+    .job h3 {
+      margin: 0 0 4px;
+      font-size: 17px;
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+    }
+
+    .job .meta {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .02em;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+
+    .job ul {
+      padding-left: 19px;
+      margin: 12px 0;
+    }
+
+    .job li {
+      padding-left: 2px;
+      margin-bottom: 4px;
+    }
+
+    /* =====================================
+       HABILIDADES POR EXPERIÊNCIA
+    ===================================== */
+
+    .job-skills {
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+      margin-top: 18px;
+    }
+
+    .skills-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: var(--pill-bg);
       border: 1px solid var(--border);
       border-radius: 999px;
-      text-decoration: none;
-      color: var(--text);
-      transition: border-color .2s ease, transform .05s ease;
+      color: var(--pill-text);
+      font-size: 12px;
+      padding: 4px 10px;
+      line-height: 1.6;
     }
-    nav a:hover { border-color: var(--accent); }
-    nav a:active { transform: translateY(1px); }
-    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 14px; border-radius: 10px;
-      text-decoration: none; font-weight: 600;
-      border: 1px solid var(--border);
-      background: var(--card);
-      color: var(--text);
+
+    /* =====================================
+       FORMAÇÃO
+    ===================================== */
+
+    .education-list {
+      display: grid;
+      gap: 0;
+      padding: 8px 24px;
     }
-    .btn.primary { background: var(--accent); color: white; border-color: transparent; }
-    .btn:hover { filter: brightness(1.02); }
-    main section {
-      margin-top: 36px; padding-top: 6px;
+
+    .education-item {
+      padding: 17px 0;
     }
-    h2 {
-      font-size: 18px; letter-spacing: 0.02em; text-transform: uppercase;
-      color: var(--muted); margin: 0 0 12px 0;
+
+    .education-item + .education-item {
+      border-top: 1px solid var(--border);
     }
-    .lead {
-      font-size: 16px;
-      color: var(--text);
-      background: transparent;
+
+    .education-item strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
     }
+
+    .education-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    /* =====================================
+       IDIOMAS
+    ===================================== */
+
+    .language-list {
+      padding: 8px 24px;
+    }
+
+    .language-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      gap: 12px;
+    }
+
+    .language-item + .language-item {
+      border-top: 1px solid var(--border);
+    }
+
+    .language-item strong {
+      font-size: 14px;
+    }
+
+    .language-level {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* =====================================
+       CARDS
+    ===================================== */
+
     .card {
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
+      border-radius: 12px;
       background: var(--card);
     }
-    .experience {
-      display: grid; gap: 12px;
-      border-left: 2px solid var(--border);
-      padding-left: 16px;
+
+    #contato .card {
+      padding: 24px;
     }
-    .job { position: relative; padding-left: 0; }
-    .job::before {
-      content: ""; position: absolute; left: -19px; top: 6px;
-      width: 10px; height: 10px; border-radius: 999px;
-      background: var(--accent);
-      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+
+    #contato p {
+      margin: 8px 0;
     }
-    .job h3 { margin: 0 0 4px; font-size: 16px; }
-    .job .meta { color: var(--muted); font-size: 14px; margin-bottom: 6px; }
-    ul, ol { padding-left: 18px; margin: 8px 0; }
-    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-    .pill {
-      border: 1px solid var(--border);
-      border-radius: 999px; padding: 6px 10px; font-size: 14px;
-      background: transparent;
+
+    #contato a {
+      text-decoration: none;
     }
+
+    #contato a:hover {
+      text-decoration: underline;
+    }
+
+    /* =====================================
+       RODAPÉ
+    ===================================== */
+
     footer {
-      margin-top: 48px; font-size: 14px; color: var(--muted);
-      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
-      border-top: 1px dashed var(--border); padding-top: 16px;
+      border-top: 1px dashed var(--border);
+      padding-top: 18px;
+      margin-top: 64px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 12px;
     }
-    /* Print-friendly */
+
+    /* =====================================
+       RESPONSIVIDADE
+    ===================================== */
+
+    @media (max-width: 600px) {
+      .wrap {
+        padding: 20px 15px 40px;
+      }
+
+      header {
+        padding: 28px 22px;
+        border-radius: 13px;
+      }
+
+      .name {
+        font-size: 36px;
+      }
+
+      .role {
+        font-size: 16px;
+      }
+
+      .lead {
+        font-size: 14px;
+      }
+
+      nav {
+        gap: 7px;
+      }
+
+      nav a {
+        font-size: 11px;
+        padding: 7px 11px;
+      }
+
+      .experience {
+        padding-left: 16px;
+      }
+
+      .job {
+        padding: 18px;
+      }
+
+      .job::before {
+        left: -23px;
+      }
+
+      main section {
+        margin-top: 38px;
+      }
+
+      .education-list,
+      .language-list {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+
+    /* =====================================
+       ACESSIBILIDADE
+    ===================================== */
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+
+    /* =====================================
+       IMPRESSÃO / PDF
+    ===================================== */
+
     @media print {
-      nav, .actions, footer { display: none !important; }
-      .wrap { padding: 0; }
-      body { background: white; color: black; }
-      .card { border-color: #ddd; }
+      @page {
+        margin: 15mm;
+      }
+
+      :root {
+        --bg: #ffffff;
+        --text: #111111;
+        --muted: #555555;
+        --border: #dddddd;
+        --card: #ffffff;
+        --pill-bg: #f5f5f5;
+        --pill-text: #333333;
+        --accent: #397f91;
+      }
+
+      body {
+        background: white;
+        color: black;
+        font-size: 11px;
+      }
+
+      .wrap {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      header {
+        background: white;
+        color: black;
+        border: 1px solid #ddd;
+        padding: 22px;
+        margin-bottom: 24px;
+        border-radius: 0;
+      }
+
+      .name {
+        color: black;
+        font-size: 30px;
+      }
+
+      .role,
+      .lead,
+      .location {
+        color: #444;
+      }
+
+      .eyebrow {
+        color: #555;
+      }
+
+      nav,
+      .actions,
+      footer {
+        display: none !important;
+      }
+
+      main section {
+        margin-top: 24px;
+      }
+
+      .job {
+        break-inside: avoid;
+        box-shadow: none !important;
+        transform: none !important;
+        padding: 15px;
+      }
+
+      .job::before {
+        box-shadow: none;
+      }
+
+      .card {
+        break-inside: avoid;
+      }
+
+      a {
+        color: black;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <header>
-      <div class="name">Erick Heidan</div>
-      <div class="role">Data Analyst • São Paulo, Brasil</div>
-      <p class="lead">Data Analyst com sólida experiência em Business Intelligence, automação de processos e criação de dashboards estratégicos. Bacharel em Ciências Sociais pela FESPSP, atuo na transformação de dados em insights que apoiam decisões de negócio.</p>
 
-      <nav aria-label="Navegação">
+    <!-- CABEÇALHO -->
+
+    <header>
+      <div class="eyebrow">
+        EH. / PORTFOLIO PROFISSIONAL
+      </div>
+
+      <div class="name">
+        Erick Heidan
+      </div>
+
+      <div class="role">
+        Data Analytics & Business Intelligence
+      </div>
+
+      <p class="lead">
+        Data Analyst com sólida experiência em Business Intelligence,
+        automação de processos e criação de dashboards estratégicos.
+        Bacharel em Ciências Sociais pela FESPSP, atuo na transformação
+        de dados em insights que apoiam decisões de negócio.
+      </p>
+
+      <div class="location">
+        São Paulo, Brasil
+      </div>
+
+      <nav aria-label="Navegação principal">
         <a href="#experiencia">Experiência</a>
-        <a href="#habilidades">Habilidades</a>
         <a href="#formacao">Formação</a>
+        <a href="#idiomas">Idiomas</a>
         <a href="#contato">Contato</a>
       </nav>
 
       <div class="actions">
-        <a class="btn primary" href="mailto:erickheidan@gmail.com" aria-label="Enviar email">✉️ Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/erickheidan" target="_blank" rel="noopener">LinkedIn</a>
+        <a
+          class="btn primary"
+          href="mailto:erickheidan@gmail.com"
+          aria-label="Enviar email"
+        >
+          ✉ Email
+        </a>
+
+        <a
+          class="btn"
+          href="https://www.linkedin.com/in/erickheidan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
       </div>
     </header>
-      
-<section id="experiencia">
-  <h2>Experiência</h2>
-  <div class="experience">
 
-    <article class="job card">
-      <h3>Data Analytics Analyst Sr — MATH Group</h3>
-      <div class="meta">Nov 2024 — Atual • São Paulo, BR</div>
-      <ul>
-        <li> Análise de dados e monitoramento de KPIs.</li>
-        <li> Automatização e otimização de processos.</li>
-        <li> Criação de dashboards e relatórios para tomada de decisão.</li>
-      </ul>
-      <div class="job-skills">
-        <div class="skills-label"> Habilidades e tecnologias</div>
-        <div class="skills">
-          <span class="pill">SQL</span>
-          <span class="pill">Python</span>
-          <span class="pill">Spark</span>
-          <span class="pill">ETL</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">Databricks</span>
-          <span class="pill">Big Query</span>
-          <span class="pill">KPIs</span>
-          <span class="pill">Automação</span>
-          <span class="pill">Business Intelligence</span>
-        </div>
-      </div>
-    </article>
+    <main>
 
-    <article class="job card">
-      <h3>Analista de Dados de CRM — Mosaic Brasil</h3>
-      <div class="meta">Dez 2022 — Nov 2024 • São Paulo, BR</div>
-      <ul>
-        <li>Modelagem e construção de bases de dados.</li>
-        <li>Dashboards e acompanhamento de KPIs.</li>
-        <li>Estudos e análises de dados.</li>
-      </ul>
-      <div class="job-skills">
-        <div class="skills-label">Habilidades e tecnologias</div>
-        <div class="skills">
-          <span class="pill">SQL</span>
-          <span class="pill">ETL</span>
-          <span class="pill">Big Query</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">CRM</span>
-          <span class="pill">Análise de Dados</span>
-        </div>
-      </div>
-    </article>
+      <!-- EXPERIÊNCIA PROFISSIONAL -->
 
-    <article class="job card">
-      <h3>Analista de Dados de CX — Petlove&Co</h3>
-      <div class="meta">Abr 2022 — Dez 2022 • São Paulo, BR</div>
-      <ul>
-        <li>Construção de painéis e análises de KPIs.</li>
-        <li>Estudos de dados focados em experiência do cliente.</li>
-      </ul>
-      <div class="job-skills">
-        <div class="skills-label">Habilidades e tecnologias</div>
-        <div class="skills">
-          <span class="pill">SQL</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">Big Query</span>
-          <span class="pill">Customer Experience</span>
-          <span class="pill">KPIs</span>
-          <span class="pill">Análise de Dados</span>
-        </div>
-      </div>
-    </article>
+      <section id="experiencia">
+        <h2>01 / Experiência profissional</h2>
 
-    <article class="job card">
-      <h3>Analista Pleno em Analytics — Dotz Inc.</h3>
-      <div class="meta">Jul 2021 — Mar 2022 • São Paulo, BR</div>
-      <ul>
-        <li>Criação de consultas e garantia de confiabilidade dos dados.</li>
-        <li>Desenvolvimento e monitoramento de KPIs.</li>
-      </ul>
-      <div class="job-skills">
-        <div class="skills-label">Habilidades e tecnologias</div>
-        <div class="skills">
-          <span class="pill">SQL</span>
-          <span class="pill">Big Query</span>
-          <span class="pill">Google Data Studio</span>
-          <span class="pill">KPIs</span>
-          <span class="pill">Qualidade de Dados</span>
-          <span class="pill">Business Intelligence</span>
-        </div>
-      </div>
-    </article>
+        <div class="experience">
 
-    <article class="job card">
-      <h3>Business Analyst Jr. — Revelo</h3>
-      <div class="meta">Out 2020 — Jun 2021 • São Paulo, BR</div>
-      <ul>
-        <li>Relatórios e dashboards de KPIs.</li>
-        <li>Automação de processos e bots internos.</li>
-      </ul>
-      <div class="job-skills">
-        <div class="skills-label">Habilidades e tecnologias</div>
-        <div class="skills">
-          <span class="pill">SQL</span>
-          <span class="pill">BigQuery</span>
-          <span class="pill">Google Data Studio</span>
-          <span class="pill">Automação</span>
-          <span class="pill">Dashboards</span>
-          <span class="pill">Business Analytics</span>
-        </div>
-      </div>
-    </article>
+          <!-- MATH GROUP -->
 
-  </div>
-</section>
+          <article class="job">
+            <h3>Data Analytics Analyst Sr. — MATH Group</h3>
 
+            <div class="meta">
+              NOV 2024 — ATUAL · São Paulo, BR
+            </div>
 
-      
-<section id="habilidades">
-  <h2>Habilidades</h2>
-  <div class="card skills">
-    <span class="pill">SQL</span>
-    <span class="pill">Python</span>
-    <span class="pill">Spark</span>
-    <span class="pill">Microsoft Power BI</span>
-    <span class="pill">Estatística</span>
-    <span class="pill">Business Intelligence</span>
-    <span class="pill">Análise de Dados</span>
-    <span class="pill">Automação de Processos</span>
-    <span class="pill">Inglês Profissional</span>
-  </div>
-</section>
+            <ul>
+              <li>Análise de dados e monitoramento de KPIs.</li>
+              <li>Automatização e otimização de processos.</li>
+              <li>Criação de dashboards e relatórios para tomada de decisão.</li>
+            </ul>
 
+            <div class="job-skills">
+              <div class="skills-label">
+                Habilidades e tecnologias
+              </div>
 
-      
-<section id="formacao">
-  <h2>Formação</h2>
-  <div class="card">
-    <p><strong>Especialização em Data Analytics</strong> — Preditiva Analytics (2021)</p>
-    <p><strong>Curso Livre Banco de Dados</strong> — Let's Code Academy (2020)</p>
-    <p><strong>Bacharelado em Ciências Sociais</strong> — FESPSP (2015–2018)</p>
-  </div>
-</section>
+              <div class="skills">
+                <span class="pill">SQL</span>
+                <span class="pill">Python</span>
+                <span class="pill">Spark</span>
+                <span class="pill">ETL</span>
+                <span class="pill">Power BI</span>
+                <span class="pill">Databricks</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">KPIs</span>
+                <span class="pill">Automação</span>
+                <span class="pill">Business Intelligence</span>
+              </div>
+            </div>
+          </article>
 
+          <!-- MOSAIC BRASIL -->
 
-      <section id="contato">
-        <h2>Contato</h2>
-        <div class="card">
-          <p>Email: <a href="mailto:erickheidan@gmail.com">erickheidan@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/erickheidan" target="_blank" rel="noopener">linkedin.com/in/erickheidan</a></p>
+          <article class="job">
+            <h3>Analista de Dados de CRM — Mosaic Brasil</h3>
+
+            <div class="meta">
+              DEZ 2022 — NOV 2024 · São Paulo, BR
+            </div>
+
+            <ul>
+              <li>Modelagem e construção de bases de dados.</li>
+              <li>Dashboards e acompanhamento de KPIs.</li>
+              <li>Estudos e análises de dados.</li>
+            </ul>
+
+            <div class="job-skills">
+              <div class="skills-label">
+                Habilidades e tecnologias
+              </div>
+
+              <div class="skills">
+                <span class="pill">SQL</span>
+                <span class="pill">ETL</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">Power BI</span>
+                <span class="pill">CRM</span>
+                <span class="pill">Análise de Dados</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PETLOVE -->
+
+          <article class="job">
+            <h3>Analista de Dados de CX — Petlove&Co</h3>
+
+            <div class="meta">
+              ABR 2022 — DEZ 2022 · São Paulo, BR
+            </div>
+
+            <ul>
+              <li>Construção de painéis e análises de KPIs.</li>
+              <li>Estudos de dados focados em experiência do cliente.</li>
+            </ul>
+
+            <div class="job-skills">
+              <div class="skills-label">
+                Habilidades e tecnologias
+              </div>
+
+              <div class="skills">
+                <span class="pill">SQL</span>
+                <span class="pill">Power BI</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">Customer Experience</span>
+                <span class="pill">KPIs</span>
+                <span class="pill">Análise de Dados</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DOTZ -->
+
+          <article class="job">
+            <h3>Analista Pleno em Analytics — Dotz Inc.</h3>
+
+            <div class="meta">
+              JUL 2021 — MAR 2022 · São Paulo, BR
+            </div>
+
+            <ul>
+              <li>Criação de consultas e garantia de confiabilidade dos dados.</li>
+              <li>Desenvolvimento e monitoramento de KPIs.</li>
+            </ul>
+
+            <div class="job-skills">
+              <div class="skills-label">
+                Habilidades e tecnologias
+              </div>
+
+              <div class="skills">
+                <span class="pill">SQL</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">Google Data Studio</span>
+                <span class="pill">KPIs</span>
+                <span class="pill">Qualidade de Dados</span>
+                <span class="pill">Business Intelligence</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- REVELO -->
+
+          <article class="job">
+            <h3>Business Analyst Jr. — Revelo</h3>
+
+            <div class="meta">
+              OUT 2020 — JUN 2021 · São Paulo, BR
+            </div>
+
+            <ul>
+              <li>Relatórios e dashboards de KPIs.</li>
+              <li>Automação de processos e bots internos.</li>
+            </ul>
+
+            <div class="job-skills">
+              <div class="skills-label">
+                Habilidades e tecnologias
+              </div>
+
+              <div class="skills">
+                <span class="pill">SQL</span>
+                <span class="pill">BigQuery</span>
+                <span class="pill">Google Data Studio</span>
+                <span class="pill">Automação</span>
+                <span class="pill">Dashboards</span>
+                <span class="pill">Business Analytics</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
+
+      <!-- FORMAÇÃO -->
+
+      <section id="formacao">
+        <h2>02 / Formação</h2>
+
+        <div class="card education-list">
+
+          <div class="education-item">
+            <strong>Especialização em Data Analytics</strong>
+            <span>Preditiva Analytics · 2021</span>
+          </div>
+
+          <div class="education-item">
+            <strong>Curso Livre Banco de Dados</strong>
+            <span>Let's Code Academy · 2020</span>
+          </div>
+
+          <div class="education-item">
+            <strong>Bacharelado em Ciências Sociais</strong>
+            <span>FESPSP · 2015–2018</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- IDIOMAS -->
+
+      <section id="idiomas">
+        <h2>03 / Idiomas</h2>
+
+        <div class="card language-list">
+
+          <div class="language-item">
+            <strong>Português</strong>
+            <span class="language-level">Nativo</span>
+          </div>
+
+          <div class="language-item">
+            <strong>Inglês</strong>
+            <span class="language-level">B2</span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+
+      <section id="contato">
+        <h2>04 / Contato</h2>
+
+        <div class="card">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:erickheidan@gmail.com">
+              erickheidan@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://www.linkedin.com/in/erickheidan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/erickheidan
+            </a>
+          </p>
+        </div>
+      </section>
+
     </main>
 
+    <!-- RODAPÉ -->
+
     <footer>
-      <div>&copy; 2025 • Erick Heidan</div>
-      <div>Feito com HTML + CSS minimalista • GitHub Pages</div>
+      <div>© 2026 · Erick Heidan</div>
+      <div>Desenvolvido com HTML e CSS · GitHub Pages</div>
     </footer>
+
   </div>
+
+  <!-- DADOS ESTRUTURADOS -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Erick Heidan",
-    "jobTitle": "Sua Profissão",
-    "url": "https://seuusuario.github.io",
+    "jobTitle": "Data Analytics Analyst",
+    "url": "https://erickheidan.github.io/",
     "email": "mailto:erickheidan@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/in/erickheidan",
       "https://github.com/erickheidan"
+    ],
+    "knowsLanguage": [
+      {
+        "@type": "Language",
+        "name": "Português",
+        "alternateName": "pt-BR"
+      },
+      {
+        "@type": "Language",
+        "name": "Inglês",
+        "alternateName": "en"
+      }
     ]
   }
   </script>
+
 </body>
 </html>
+
